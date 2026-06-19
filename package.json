@@ -1,0 +1,16 @@
+{
+  "name": "log-masker",
+  "version": "1.0.0",
+  "description": "Node.js + Express log file reader with phone number and ID card masking",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": ["express", "log", "mask", "privacy"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
