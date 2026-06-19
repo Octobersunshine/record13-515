@@ -8,3 +8,11 @@
 [2024-01-15 09:36:00] INFO - 客服工单处理，客户姓名: 孙七，联系方式: 13890909090
 [2024-01-15 09:37:22] WARN - 疑似重复身份: 身份证 510104198803034567 已存在
 [2024-01-15 09:38:00] INFO - 支付回调成功，用户手机号 13122223333 订单完成
+[2024-01-15 09:39:00] INFO - 收到JSON请求: {"user":"周八","phone":"13912349876","idcard":"120101198808084321"}
+[2024-01-15 09:40:00] ERROR - 调用用户服务异常 java.lang.Exception: 用户(13666778899)不存在
+    at com.example.UserService.getUser(UserService.java:42)
+    at com.example.LoginController.login(LoginController.java:88) ~[13666778899/classes/:na]
+    Caused by: java.lang.NullPointerException: card=130502199102021234
+    at com.example.IdCardValidator.validate(IdCardValidator.java:15)
+[2024-01-15 09:41:00] INFO - 消息队列收到: <user><phone>13588889999</phone><id>610101199505057890</id></user>
+[2024-01-15 09:42:00] DEBUG - SQL执行: UPDATE user SET mobile='13400001111' WHERE id_card='330102198712120011'
